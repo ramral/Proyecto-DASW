@@ -23,7 +23,7 @@
             margin-top: 3%;
             margin-bottom: 3%;
             border-radius: 0.5rem;
-            background: -webkit-linear-gradient(left, lightgrey,gray );
+            background: -webkit-linear-gradient(left, lightgrey, gray);
         }
 
         .profile-img {
@@ -129,35 +129,52 @@
             color: #0062cc;
         }
 
+        /*/////////// Desde aqui es del pie de pagina ///////*/
+        .context-dark,
+        .bg-gray-dark,
+        .bg-primary {
+            color: rgba(255, 255, 255, 0.8);
+        }
 
+        .brand-logo-light {
+            margin-top: 3ex;
+            margin-bottom: 3ex;
+        }
+
+        .footer-classic a,
+        .footer-classic a:focus,
+        .footer-classic a:active {
+            color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg ">
-    
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ml-auto">
                 <li class="nav-item">
                     <div class="justify-content-md-center">
                         <form class="form-inline my-2 my-lg-0 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar usuario" aria-label="Search" style="width: 600px;">
-                         
-                            <button class="btn btn-outline-success bg-primary  my-2 my-sm-0" type="submit" style="color:white">Search</button>
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar usuario"
+                                aria-label="Search" style="width: 600px;">
+
+                            <button class="btn btn-outline-success bg-primary  my-2 my-sm-0" type="submit"
+                                style="color:white">Search</button>
                         </form>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-    
+
     <div class="container emp-profile">
         <form>
             <div class="row">
                 <div class="col-md-4">
                     <div class="profile-img">
-                        <img src="https://randomuser.me/api/portraits/men/11.jpg"
-                            alt="" />
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="" />
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -172,14 +189,15 @@
                         </select>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" style="opacity: 0.8;">
-                                <a class="" id="home-tab" data-toggle="tab" role="tab"
-                                    aria-controls="home" aria-selected="true">Datos del usuario</a>
+                                <a class="" id="home-tab" data-toggle="tab" role="tab" aria-controls="home"
+                                    aria-selected="true">Datos del usuario</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <input type="button" class="profile-edit-btn" name="btnAddMore" value="Eliminar"  data-toggle="modal" data-target="#modelId"/>
+                    <input type="button" class="profile-edit-btn" name="btnAddMore" value="Eliminar" data-toggle="modal"
+                        data-target="#modelId" />
                 </div>
             </div>
             <div class="row">
@@ -224,8 +242,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="profile-img">
-                        <img src="https://randomuser.me/api/portraits/men/22.jpg"
-                            alt="" />
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="" />
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -240,8 +257,8 @@
                         </select>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" style="opacity: 0.8;">
-                                <a class="" id="home-tab" data-toggle="tab" role="tab"
-                                    aria-controls="home" aria-selected="true">Datos del usuario</a>
+                                <a class="" id="home-tab" data-toggle="tab" role="tab" aria-controls="home"
+                                    aria-selected="true">Datos del usuario</a>
                             </li>
                         </ul>
                     </div>
@@ -308,8 +325,8 @@
                         </select>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" style="opacity: 0.8;">
-                                <a class="" id="home-tab" data-toggle="tab" role="tab"
-                                    aria-controls="home" aria-selected="true">Datos del usuario</a>
+                                <a class="" id="home-tab" data-toggle="tab" role="tab" aria-controls="home"
+                                    aria-selected="true">Datos del usuario</a>
                             </li>
                         </ul>
                     </div>
@@ -352,16 +369,16 @@
         </form>
     </div>
 
-    
+
     <!-- Modal -->
     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body" style='text-align:center'>
                     ¿Eliminar usuario?
@@ -385,5 +402,40 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </body>
+<!-- / Desde aqui es del pie de pagina / -->
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+    <div class="container">
+        <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+                <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQY_rBl8o-PMAJZqa03cWj4SWrXIGd9W3V2A&usqp=CAU"
+                            alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                    <p>Nuestro recetario esta hecho especialmente para tu, se parte de nuestra gran famila</p>
+                    <!-- Rights-->
+                    <p class="rights"><span>©  </span><span
+                            class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
+                            Rights
+                            Reserved.</span></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>Contactanos</h5>
+                <dl class="contact-list">
+                    <dt>Claudia Santana:</dt>
+                    <dd><a href="mailto:#">ClaudiaSantana@hotmail.com</a></dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>Luis Ramos:</dt>
+                    <dd><a href="mailto:#">LuisRamos@hotmail.com</a></dd>
+                </dl>
+                <dl class="contact-list">
+                    <dt>Arturo Corona:</dt>
+                    <dd><a href="mailto:#">ArturoCorona@hotmail.com</a></dd>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
