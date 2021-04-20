@@ -59,32 +59,49 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Recetario DASW</a>
+      <a class="navbar-brand" href="index.html">Recetario DASW</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="input-group mb-0">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                buscar por 
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Recetas</a>
+                <a class="dropdown-item" href="#">Ingredientes</a>
+                <a class="dropdown-item" href="#">Etiquetas</a>
+                <a class="dropdown-item" href="#">Utencilios</a>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Text input with dropdown button"
+            />
+          </div>
+        </div>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">usuarios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Registro</a>
+            <a class="nav-link" href="Registro.html">Registro</a>
           </li>
           <li id = "login" class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="Login.html">Login</a>
           </li>
-          <li id="logout" class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-          </li>
+          
         </ul>
+        
       </div>
     </div>
+    
   </nav>
   <div class="container emp-profile col-8" id="Registro">
     <h1 style="color:mediumblue; margin-top: 1ex; text-align:center">Registro de Usuarios</h1>
@@ -132,7 +149,7 @@
           </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <a type="button" class="btn btn-primary" href="index.html">Sign in</a>
     </form>
   </div>
   <!-- Optional JavaScript -->
