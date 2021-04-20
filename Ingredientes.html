@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Etiquetas</title>
+    <title>Ingredientes</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -172,140 +172,41 @@
                         </ul>
                     </div>
                 </nav>
-                <h1>Etiquetas</h1>
+                <h1>Ingredientes</h1>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>#IdEtiqueta</th>
+                            <th>#idIngredientes</th>
                             <th>Nombre</th>
-                            <th>Usuario</th>
-                            <th>Recetas</th>
-                            <th>
-                                <a class="btn btn-success" data-dismiss="modal" href="" data-toggle="modal" data-target="#detalle"><i class="far fa-fw fa-edit"></i> Crear Etiqueta</a>
-                            </th>
+                            <th>Unidad de medida</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>#1</td>  
-                            <td>Favoritos</td>
-                            <td>Luis Ramos</td>
-                            <td><a href="/listado_recetas">35</a></td>
-                            <td width="50px">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a class="btn btn-primary" href="" data-toggle="modal" data-dismiss="modal" data-target="#detalleEditar" ><i class="far fa-fw fa-edit"></i> Editar</a>
-                                    <a class="confirmation btn btn-danger" href="" ><i class="far fa-fw fa-trash-alt"></i> Eliminar</a>
-                                </div>
-                            </td>
+                            <td>Sal</td>
+                            <td>Gs</td>
                         </tr>
                         <tr>
                             <td>#2</td>  
-                            <td>Rapidas</td>
-                            <td>Claudia Santana</td>
-                            <td><a href="/listado_recetas">7</a></td>
-                            <td width="50px">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a class="btn btn-primary" href="" data-toggle="modal" ><i class="far fa-fw fa-edit"></i> Editar</a>
-                                    <a class="confirmation btn btn-danger" href=""><i class="far fa-fw fa-trash-alt"></i> Eliminar</a>
-                                </div>
-                            </td>
+                            <td>Jicama</td>
+                            <td>Pza</td>
                         </tr>
                         <tr>
-                            <td>#2</td>  
-                            <td>Botaniux</td>
-                            <td>Arturo Corona</td>
-                            <td><a href="/listado_recetas">3</a></td>
-                            <td width="50px">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a class="btn btn-primary" href="" data-toggle="modal" ><i class="far fa-fw fa-edit"></i> Editar</a>
-                                    <a class="confirmation btn btn-danger" href=""><i class="far fa-fw fa-trash-alt"></i> Eliminar</a>
-                                </div>
-                            </td>
+                            <td>#3</td>  
+                            <td>Leche</td>
+                            <td>Lts</td>
                         </tr>
+                        <tr>
+                            <td>#4</td>  
+                            <td>Papa</td>
+                            <td>Kgs</td>
+                        </tr>    
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-<!-- MOdal de formulario para creacion o edicion de etiquetas -->
-<div class="modal fade" id="detalle" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Crear Etiqueta</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form class="col-10 center-block">
-                    <div class="form-row">
-                        <div class="form-group col-md-6  justify-content-center was-validated">
-                            <label for="inputEmail4">Nombre de etiqueta</label>
-                            <input type="text" class="form-control" id="etiquetas" value="" required
-                                pattern="[a-zA-Z\s]+" autofocus>
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Usuario</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Seleccionar usuario...</option>
-                              <option value="1">Arturo Corona</option>
-                              <option value="2">Claudia Santana</option>
-                              <option value="3">Luis Ramos</option>
-                            </select>
-                          </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="detalleEditar" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Editar Etiqueta</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form class="col-10 center-block">
-                    <div class="form-row">
-                        <div class="form-group col-md-6  justify-content-center was-validated">
-                            <label for="inputEmail4">Nombre de etiqueta</label>
-                            <input type="text" class="form-control" id="etiquetas" value="Favoritos" required
-                                pattern="[a-zA-Z\s]+" autofocus>
-                        </div>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <label class="input-group-text" for="inputGroupSelect01">Usuario</label>
-                            </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option >Seleccionar usuario...</option>
-                              <option value="1">Arturo Corona</option>
-                              <option value="2">Claudia Santana</option>
-                              <option value="3" selected>Luis Ramos</option>
-                            </select>
-                          </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
-            </div>
-        </div>
-    </div>
-</div>
-        
         <!-- / Desde aqui es del pie de pagina / -->
     <footer class="section footer-classic context-dark bg-image mb-0" style="background: #2d3246;">
     <div class="container">
