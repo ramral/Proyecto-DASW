@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
     <style>
         /* body {
@@ -153,6 +156,56 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Recetario DASW</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="input-group mb-0">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        buscar por
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Recetas</a>
+                        <a class="dropdown-item" href="#">Ingredientes</a>
+                        <a class="dropdown-item" href="#">Etiquetas</a>
+                        <a class="dropdown-item" href="#">Utencilios</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown" style="margin-top: 7px;">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Administrador <span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="Userprofile.html">Usuarios</a></li>
+                        <li><a href="Etiquetas.html">Etiquetas</a></li>
+                        <li><a href="Categorias.html">Categorias</a></li>
+                        <li><a href="Utencilios.html">Utensilios</a></li>
+                        <li><a href="Recetas.html">Recetas</a></li>
+                        <li><a href="Ingredientes.html">Ingredientes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Registro.html">Registro</a>
+                </li>
+                <li id="login" class="nav-item">
+                    <a class="nav-link" href="Login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </div>
+        </div>
+
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -183,77 +236,79 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>#1</td>  
+                            <td>#1</td>
                             <td>Sal</td>
                             <td>Gs</td>
                         </tr>
                         <tr>
-                            <td>#2</td>  
+                            <td>#2</td>
                             <td>Jicama</td>
                             <td>Pza</td>
                         </tr>
                         <tr>
-                            <td>#3</td>  
+                            <td>#3</td>
                             <td>Leche</td>
                             <td>Lts</td>
                         </tr>
                         <tr>
-                            <td>#4</td>  
+                            <td>#4</td>
                             <td>Papa</td>
                             <td>Kgs</td>
-                        </tr>    
+                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-        <!-- / Desde aqui es del pie de pagina / -->
+    <!-- / Desde aqui es del pie de pagina / -->
     <footer class="section footer-classic context-dark bg-image mb-0" style="background: #2d3246;">
-    <div class="container">
-        <div class="row row-30">
-            <div class="col-md-4 col-xl-5">
-                <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQY_rBl8o-PMAJZqa03cWj4SWrXIGd9W3V2A&usqp=CAU"
-                            alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
-                    <p>Nuestro recetario esta hecho especialmente para ti, se parte de nuestra gran famila</p>
-                    <!-- Rights-->
-                    <p class="rights"><span>©  </span><span
-                            class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
-                            Rights
-                            Reserved.</span></p>
+        <div class="container">
+            <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQY_rBl8o-PMAJZqa03cWj4SWrXIGd9W3V2A&usqp=CAU"
+                                alt="" width="140" height="37"
+                                srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                        <p>Nuestro recetario esta hecho especialmente para ti, se parte de nuestra gran famila</p>
+                        <!-- Rights-->
+                        <p class="rights"><span>©  </span><span
+                                class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
+                                Rights
+                                Reserved.</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contactanos</h5>
+                    <dl class="contact-list">
+                        <dt>Claudia Santana:</dt>
+                        <dd><a href="mailto:#">ClaudiaSantana@hotmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Luis Ramos:</dt>
+                        <dd><a href="mailto:#">LuisRamos@hotmail.com</a></dd>
+                    </dl>
+                    <dl class="contact-list">
+                        <dt>Arturo Corona:</dt>
+                        <dd><a href="mailto:#">ArturoCorona@hotmail.com</a></dd>
+                        </dd>
+                    </dl>
                 </div>
             </div>
-            <div class="col-md-4">
-                <h5>Contactanos</h5>
-                <dl class="contact-list">
-                    <dt>Claudia Santana:</dt>
-                    <dd><a href="mailto:#">ClaudiaSantana@hotmail.com</a></dd>
-                </dl>
-                <dl class="contact-list">
-                    <dt>Luis Ramos:</dt>
-                    <dd><a href="mailto:#">LuisRamos@hotmail.com</a></dd>
-                </dl>
-                <dl class="contact-list">
-                    <dt>Arturo Corona:</dt>
-                    <dd><a href="mailto:#">ArturoCorona@hotmail.com</a></dd>
-                    </dd>
-                </dl>
-            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
 </html>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
