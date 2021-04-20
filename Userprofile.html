@@ -129,6 +129,31 @@
             color: #0062cc;
         }
 
+        .change-password {
+            padding: 28%;
+            margin-top: -29%;
+        }
+
+        .change-password .card-header {
+            padding: 2.8%;
+            border: 1px solid #bdbdbd;
+        }
+
+        .change-password .card-body {
+            background: #ffffff;
+            border: 1px solid #bdbdbd;
+            padding: 7%;
+            text-align: left;
+            font-size: 13px;
+            margin-bottom: -78%;
+        }
+
+        .change-password .btn {
+            width: 100%;
+            margin-top: 5%;
+            font-size: 13px;
+        }
+
         /*/////////// Desde aqui es del pie de pagina ///////*/
         .context-dark,
         .bg-gray-dark,
@@ -198,7 +223,10 @@
                 <div class="col-md-2">
                     <input type="button" class="profile-edit-btn" name="btnAddMore" value="Eliminar" data-toggle="modal"
                         data-target="#modelId" />
-                        <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" data-toggle="modal" data-target="#modelId2" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore"
+                        value="Editar" data-toggle="modal" data-target="#modelId2" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore"
+                        value="Password" data-toggle="modal" data-target="#modelId3" />
                 </div>
             </div>
             <div class="row">
@@ -266,7 +294,8 @@
                 </div>
                 <div class="col-md-2">
                     <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Eliminar" />
-                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore"
+                        value="Editar" />
                 </div>
             </div>
             <div class="row">
@@ -335,7 +364,8 @@
                 </div>
                 <div class="col-md-2">
                     <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Eliminar" />
-                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore"
+                        value="Editar" />
                 </div>
             </div>
             <div class="row">
@@ -407,32 +437,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-  
-    
+
+
     <!-- Modal -->
     <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Editar usuario</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form class="col-10 center-block">
                         <div class="form-row">
-                          <div class="form-group col-md-6  justify-content-center was-validated">
-                            <label for="inputEmail4">Nombre</label>
-                            <input type="text" class="form-control" id="inputEmail4" value="Arturo" required pattern="[a-zA-Z\s]+" autofocus>
-                          </div>
-                          <div class="form-group col-md-6 was-validated">
-                            <label for="inputPassword4">Apellidos</label>
-                            <input type="text" class="form-control" id="inputPassword4" required autofocus
-                              pattern="[a-zA-Z\s]+" value="Corona">
-                          </div>
+                            <div class="form-group col-md-6  justify-content-center was-validated">
+                                <label for="inputEmail4">Nombre</label>
+                                <input type="text" class="form-control" id="inputEmail4" value="Arturo" required
+                                    pattern="[a-zA-Z\s]+" autofocus>
+                            </div>
+                            <div class="form-group col-md-6 was-validated">
+                                <label for="inputPassword4">Apellidos</label>
+                                <input type="text" class="form-control" id="inputPassword4" required autofocus
+                                    pattern="[a-zA-Z\s]+" value="Corona">
+                            </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -441,6 +472,41 @@
             </div>
         </div>
     </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="card-header ">
+                    <h2>Cambio de contraseña</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <div class="form-group was-validated">
+                            <label for="pwd">Contraseña actual</label>
+                            <input type="password" id="pwd" name="pwd" class="form-control" required>
+                        </div>
+                        <div class="form-group was-validated">
+                            <label for="pwd">Nueva contraseña</label>
+                            <input type="password" id="pwd" name="pwd" class="form-control" required
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        </div>
+                        <div class="form-group was-validated">
+                            <label for="pwd">Verificación</label>
+                            <input type="password" id="pwd" name="pwd" class="form-control" required>
+                            <span class="form-text small text-muted">Para confirmar su contraseña, escribala nuevamente.
+                            </span>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary" data-dismiss="modal">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
 </body>
 <!-- / Desde aqui es del pie de pagina / -->
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
