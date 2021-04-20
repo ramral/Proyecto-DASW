@@ -15,7 +15,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <style>
         /* body {
             background: -webkit-linear-gradient(left, #3931af, #00c6ff);
@@ -156,49 +156,63 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container">
-                  <a class="navbar-brand" href="index.html">Recetario DASW</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="input-group mb-0">
-                        <div class="input-group-prepend">
-                          <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            buscar por 
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Recetas</a>
-                            <a class="dropdown-item" href="#">Ingredientes</a>
-                            <a class="dropdown-item" href="#">Etiquetas</a>
-                            <a class="dropdown-item" href="#">Utencilios</a>
-                          </div>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Text input with dropdown button"/>
-                      </div>
-                    </div>
-                  <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                      <li class="dropdown" style="margin-top: 7px;">
-                        <a  class="dropdown-toggle" href="#" data-toggle="dropdown">Administrador <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="Userprofile.html">Usuarios</a></li>
-                            <li><a href="Etiquetas.html">Etiquetas</a></li>
-                            <li><a href="Categorias.html">Categorias</a></li>
-                            <li><a href="Utencilios.html">Utensilios</a></li>
-                            <li><a href="Recetas.html">Recetas</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="Registro.html">Registro</a>
-                      </li>
-                      <li id = "login" class="nav-item">
-                        <a class="nav-link" href="Login.html">Login</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Recetario DASW</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="input-group mb-0">
+                <div class="input-group-prepend">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    buscar por 
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Recetas</a>
+                    <a class="dropdown-item" href="#">Ingredientes</a>
+                    <a class="dropdown-item" href="#">Etiquetas</a>
+                    <a class="dropdown-item" href="#">Utencilios</a>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+              </div>
+            </div>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="dropdown" style="margin-top: 7px;">
+                <a  class="dropdown-toggle" data-toggle="dropdown" href="#">Administrador <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="Userprofile.html">Usuarios</a></li>
+                  <li><a href="Etiquetas.html">Etiquetas</a></li>
+                  <li><a href="Categorias.html">Categorias</a></li>
+                  <li><a href="Utencilios.html">Utensilios</a></li>
+                  <li><a href="Recetas.html">Recetas</a></li>
+                  <li><a href="ingredients.html">Ingredientes</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Registro.html">Registro</a>
+              </li>
+              <li id = "login" class="nav-item">
+                <a class="nav-link" href="Login.html">Login</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        
+      </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -453,7 +467,7 @@
                             <div class="col-12">
                                 <div class="form-group  justify-content-center was-validated">
                                     <label for="inputEmail4">Nombre de la receta</label>
-                                    <input type="text" class="form-control" id="etiquetas" value="Favoritos" required
+                                    <input type="text" class="form-control" id="etiquetas" value="Enchiladas con papa y queso" required
                                     pattern="[a-zA-Z\s]+" autofocus>
                                 </div>
                             </div>
@@ -464,9 +478,9 @@
                                     </div>
                                     <select class="custom-select" id="inputGroupSelect01">
                                         <option >Seleccionar usuario...</option>
-                                        <option value="1">Arturo Corona</option>
+                                        <option value="1"selected>Arturo Corona</option>
                                         <option value="2">Claudia Santana</option>
-                                        <option value="3" selected>Luis Ramos</option>
+                                        <option value="3" >Luis Ramos</option>
                                     </select>
                                 </div>
                             </div>
@@ -485,25 +499,56 @@
                             </div>
                             <div class="col-6">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe tus Utencilios separadas por comas" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Escribe tus Utencilios separadas por comas" id="floatingTextarea2" style="height: 100px">Sartén, Licuadora, Bowl mediano, Paleta</textarea>
                                     <label for="floatingTextarea2">Utencilios</label>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe tus ingredientes separadas por comas" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Escribe tus ingredientes separadas por comas" id="floatingTextarea2" style="height: 100px">Tortillas,Chile,Jitomates,Papas,Queso,Sal</textarea>
                                     <label for="floatingTextarea2">Ingredientes</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe aquí tu procedimiento" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Escribe aquí tu procedimiento" id="floatingTextarea2" style="height: 100px"> ¿Quieres consentirte a ti y a toda a tu familia con un desayuno rico? Te comparto mi receta de enchiladas de papa con queso para que las prepares un sábado o domingo, tranquila y sin prisas.
+
+                                        Te pongo las cantidades para hacer cuatro porciones, ya de ahí tú calcula cuántas necesitas para alimentar a los tuyos. ¡A cocinar!
+                                        
+                                        Ingredientes
+                                        4 papas medianas
+                                        ¼ de kilo de tortillas de maíz
+                                        400 gramos de queso Oaxaca
+                                        800 gramos de puré de tomate
+                                        2 chiles guajillo
+                                        2 chiles anchos
+                                        3 dientes de ajo
+                                        Crema al gusto
+                                        Sal al gusto
+                                        2 cucharadas de aceite
+                                        1 lechuga
+                                        1 aguacate
+                                        Primero, las papas
+                                        Pon a cocinar las papas en una olla con agua hirviendo. Cuando estén suaves, tritúralas y sazónalas con sal. No es necesario que queden como puré, es mejor si hay algunos trocitos enteros.
+                                        
+                                        Luego, la salsa
+                                        Asa los chiles en un comal y, cuando estén doraditos, ponlos a cocer un rato en agua caliente. Cuando los sientas blanditos, escúrrelos y pásalos a una licuadora junto con el puré de tomate y los dientes de ajo. Licúa hasta que todo esté bien mezclado.
+                                        
+                                        
+                                        ¡Al sartén!
+                                        Arma las enchiladas con las tortillas de maíz, la papa y el queso Oaxaca. Pon a calentar la salsa en una olla aparte. Calienta el aceite en un sartén y coloca las enchiladas para que se frían por ambos lados. Cuando estén doraditas, ponlas en un plato y báñalas con la salsa roja.
+                                        
+                                        
+                                        Para servirlas
+                                        Parte la lechuga en tiras y ponla encima de las enchiladas. Termina con una porción generosa de crema y el aguacate partido en rodajas. ¡A disfrutar!
+                                        
+                                        Dale gusto a tu familia con esta receta de enchiladas de papa con queso. Son deliciosas, sencillas y muy mexicanas.</textarea>
                                     <label for="floatingTextarea2">Procedimiento</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe tus etiquetas separadas por comas" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Escribe tus etiquetas separadas por comas" id="floatingTextarea2" style="height: 100px">Rapidas,Favoritos,Con Tortilla </textarea>
                                     <label for="floatingTextarea2">Etiquetas</label>
                                 </div>
                             </div>
