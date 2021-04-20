@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Administrar usuarios</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -198,6 +198,7 @@
                 <div class="col-md-2">
                     <input type="button" class="profile-edit-btn" name="btnAddMore" value="Eliminar" data-toggle="modal"
                         data-target="#modelId" />
+                        <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" data-toggle="modal" data-target="#modelId2" />
                 </div>
             </div>
             <div class="row">
@@ -265,6 +266,7 @@
                 </div>
                 <div class="col-md-2">
                     <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Eliminar" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" />
                 </div>
             </div>
             <div class="row">
@@ -330,6 +332,10 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-md-2">
+                    <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Eliminar" />
+                    <input type="button" class="profile-edit-btn" style="margin-top: 10px;" name="btnAddMore" value="Editar" />
                 </div>
             </div>
             <div class="row">
@@ -401,6 +407,40 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+  
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar usuario</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form class="col-10 center-block">
+                        <div class="form-row">
+                          <div class="form-group col-md-6  justify-content-center was-validated">
+                            <label for="inputEmail4">Nombre</label>
+                            <input type="text" class="form-control" id="inputEmail4" value="Arturo" required pattern="[a-zA-Z\s]+" autofocus>
+                          </div>
+                          <div class="form-group col-md-6 was-validated">
+                            <label for="inputPassword4">Apellidos</label>
+                            <input type="text" class="form-control" id="inputPassword4" required autofocus
+                              pattern="[a-zA-Z\s]+" value="Corona">
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <!-- / Desde aqui es del pie de pagina / -->
 <footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
